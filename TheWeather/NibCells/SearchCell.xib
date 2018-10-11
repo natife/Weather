@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="SearchCell" id="gSg-s7-SYF" customClass="SearchCell" customModule="Weather_Test" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="gSg-s7-SYF" id="RXX-Z2-bA8">
+                <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="CityLabel" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="drU-ZZ-Az1">
+                        <rect key="frame" x="26" y="11" width="323" height="22"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="19"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="drU-ZZ-Az1" firstAttribute="bottom" secondItem="RXX-Z2-bA8" secondAttribute="bottomMargin" id="HPw-wa-oH9"/>
+                    <constraint firstItem="drU-ZZ-Az1" firstAttribute="top" secondItem="RXX-Z2-bA8" secondAttribute="topMargin" id="Utr-kW-TyI"/>
+                    <constraint firstItem="drU-ZZ-Az1" firstAttribute="leading" secondItem="RXX-Z2-bA8" secondAttribute="leadingMargin" constant="10" id="X11-Yo-Y10"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="drU-ZZ-Az1" secondAttribute="trailing" constant="10" id="wTj-Pi-CIn"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="cityLabel" destination="drU-ZZ-Az1" id="3po-Yk-paa"/>
+            </connections>
+            <point key="canvasLocation" x="67" y="31"/>
+        </tableViewCell>
+    </objects>
+</document>
